@@ -53,7 +53,7 @@ class AppTextButton extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          buttonIcon??SizedBox(
+          buttonIcon??const SizedBox(
             height: 0,
             width: 0,
           ),

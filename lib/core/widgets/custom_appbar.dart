@@ -15,7 +15,7 @@ PreferredSizeWidget customAppBar(
         elevation: 0.0,
         title: Text(text, style: TextStyles.font20LightBlackBold),
         centerTitle: true,
-        bottom: PreferredSize(preferredSize: Size.fromHeight(1), child: Container(
+        bottom: PreferredSize(preferredSize: const Size.fromHeight(1), child: Container(
           color: ColorsManager.lightGray,
           height: 1.h,
         ),),
