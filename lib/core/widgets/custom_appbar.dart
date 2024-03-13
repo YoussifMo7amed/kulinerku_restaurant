@@ -9,6 +9,7 @@ PreferredSizeWidget customAppBar(
   }
 ){
  return  AppBar(
+  surfaceTintColor: Colors.white,
         backgroundColor: Colors.white,
         iconTheme:
             IconThemeData(color: ColorsManager.maindeeporange, size: 35.sp),

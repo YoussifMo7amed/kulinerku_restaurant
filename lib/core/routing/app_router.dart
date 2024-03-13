@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:kulinerku_restaurant/features/home/screens/review_screen.dart';
+import 'package:kulinerku_restaurant/features/home/home_page.dart';
 
+import '../../features/home/screens/video_screen.dart';
 import '../../features/onboarding/ui/onboarding.dart';
 import 'routers.dart';
 
@@ -13,6 +16,18 @@ class AppRouter {
       case Routes.loginscreen:
         return MaterialPageRoute(
           builder: (_) => Container(),
+        );
+        case Routes.homescreen:
+        return MaterialPageRoute(
+          builder: (_) =>const HomeScreen(),
+        );
+         case Routes.reviewScreen:
+        return MaterialPageRoute(
+          builder: (_) =>const ReviewPage(),
+        );
+        case Routes.videoScreen:
+        return MaterialPageRoute(
+          builder: (_) =>const VideoScreen(),
         );
       default:
         return MaterialPageRoute(

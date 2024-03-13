@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'colors.dart';
 import 'font_weight_helper.dart';
@@ -16,7 +17,7 @@ class TextStyles {
       fontWeight: FontWeightHelper.extraBold,
       color: ColorsManager.maindeeporange);
 
-        static TextStyle font12DeepOrangeBold = fonts.copyWith(
+  static TextStyle font12DeepOrangeBold = fonts.copyWith(
       fontSize: 12,
       fontWeight: FontWeightHelper.extraBold,
       color: ColorsManager.maindeeporange);
@@ -30,47 +31,67 @@ class TextStyles {
       fontSize: 20,
       fontWeight: FontWeightHelper.bold,
       color: ColorsManager.lightBlack);
+  static TextStyle font16LightBlackBold = fonts.copyWith(
+      fontSize: 16,
+      fontWeight: FontWeightHelper.bold,
+      color: ColorsManager.lightBlack);
   static TextStyle font22LightBlackBold = fonts.copyWith(
       fontSize: 22,
       fontWeight: FontWeightHelper.bold,
       color: ColorsManager.lightBlack);
-       static TextStyle font14WhiteBold = fonts.copyWith(
+  static TextStyle font14WhiteBold = fonts.copyWith(
     fontSize: 14,
     fontWeight: FontWeightHelper.bold,
     color: Colors.white,
   );
-     static TextStyle font14LightBlackMedium = fonts.copyWith(
+  static TextStyle font14LightBlackMedium = fonts.copyWith(
     fontSize: 15,
     fontWeight: FontWeightHelper.medium,
     color: ColorsManager.lightBlack,
   );
-    static TextStyle font14deepOrangeRegular = fonts.copyWith(
+  static TextStyle font36deepOrangeMedium = fonts.copyWith(
+    fontSize: 36,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorsManager.maindeeporange,
+  );
+  static TextStyle font14deepOrangeRegular = fonts.copyWith(
     fontSize: 14,
     fontWeight: FontWeightHelper.regular,
     color: ColorsManager.maindeeporange,
   );
-    static TextStyle font20LightBlackSemiBold = fonts.copyWith(
+  static TextStyle font20LightBlackSemiBold = fonts.copyWith(
     fontSize: 20,
     fontWeight: FontWeightHelper.semiBold,
     color: ColorsManager.lightBlack,
   );
-   static TextStyle font13lightblackRegular = fonts.copyWith(
+  static TextStyle font13lightblackRegular = fonts.copyWith(
     fontSize: 13,
     fontWeight: FontWeightHelper.regular,
     color: ColorsManager.lightBlack,
   );
+   static TextStyle font16lightblackRegular = fonts.copyWith(
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.lightBlack,
+  );
+  static TextStyle font14lightblackRegular = fonts.copyWith(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorsManager.lightBlack,
+  );
   static TextStyle font13lightblacksemiBold = fonts.copyWith(
-    fontSize:16,
+    fontSize: 16,
     fontWeight: FontWeightHelper.semiBold,
     color: ColorsManager.lightBlack,
   );
-   static TextStyle font32LightBlackBold = fonts.copyWith(
+  static TextStyle font32LightBlackBold = fonts.copyWith(
       fontSize: 32,
       fontWeight: FontWeightHelper.bold,
       color: ColorsManager.lightBlack);
 
-static TextStyle font16LightBlackSemiBold = fonts.copyWith(
+  static TextStyle font16LightBlackSemiBold = fonts.copyWith(
     fontSize: 16,
     fontWeight: FontWeightHelper.semiBold,
-    color: ColorsManager.lightBlack,);
+    color: ColorsManager.lightBlack,
+  );
 }
