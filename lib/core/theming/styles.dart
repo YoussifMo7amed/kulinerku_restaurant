@@ -80,8 +80,13 @@ class TextStyles {
     color: ColorsManager.lightBlack,
   );
   static TextStyle font13lightblacksemiBold = fonts.copyWith(
-    fontSize: 16,
+    fontSize: 13,
     fontWeight: FontWeightHelper.semiBold,
+    color: ColorsManager.lightBlack,
+  );
+   static TextStyle font13lightblackBold = fonts.copyWith(
+    fontSize: 13,
+    fontWeight: FontWeightHelper.bold,
     color: ColorsManager.lightBlack,
   );
   static TextStyle font32LightBlackBold = fonts.copyWith(

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:kulinerku_restaurant/features/home/screens/review_screen.dart';
 import 'package:kulinerku_restaurant/features/home/home_page.dart';
+import 'package:kulinerku_restaurant/features/profile/ui/screens/edut_menu_screen.dart';
+import 'package:kulinerku_restaurant/features/profile/ui/screens/videos_review_screen.dart';
 
 import '../../features/home/screens/video_screen.dart';
 import '../../features/onboarding/ui/onboarding.dart';
+import '../../features/profile/ui/screens/edit_profile_screen.dart';
 import 'routers.dart';
 
 class AppRouter {
@@ -28,6 +31,18 @@ class AppRouter {
         case Routes.videoScreen:
         return MaterialPageRoute(
           builder: (_) =>const VideoScreen(),
+        );
+         case Routes.editProfile:
+        return MaterialPageRoute(
+          builder: (_) => const EditProfile(),
+        );
+        case Routes.reviewvideos:
+        return MaterialPageRoute(
+          builder: (_) => const ReviewVideos(),
+        );
+         case Routes.editmenu:
+        return MaterialPageRoute(
+          builder: (_) => const EdtiMenu(),
         );
       default:
         return MaterialPageRoute(

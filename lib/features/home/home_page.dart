@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kulinerku_restaurant/features/profile/ui/profile_page.dart';
 import 'widgets/custom_buttom_navigationBar.dart';
 import 'widgets/custom_home_appbar.dart';
 import 'screens/home_screen.dart';
@@ -15,6 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> screens= const[
   HomePage(),
   SizedBox(),
+  ProfilePage(),
 ];
   @override
   Widget build(BuildContext context) {

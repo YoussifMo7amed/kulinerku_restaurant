@@ -30,7 +30,7 @@ class VideoScreen extends StatelessWidget {
             ),
           ),
           SliverList.builder(
-            itemBuilder: (context, index) => const VideoReview(),
+            itemBuilder: (context, index) => const VideosReview(),
             itemCount: 5,
           ),
         ],
@@ -39,8 +39,8 @@ class VideoScreen extends StatelessWidget {
   }
 }
 
-class VideoReview extends StatelessWidget {
-  const VideoReview({
+class VideosReview extends StatelessWidget {
+  const VideosReview({
     super.key,
   });
 

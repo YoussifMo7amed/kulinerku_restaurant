@@ -4,5 +4,9 @@ class Routes {
   static const String homescreen = '/HomeScreen';
   static const String reviewScreen = '/ReviewScreen';  
   static const String videoScreen = '/VideoScreen';
+  static const String editProfile = '/EditProfile';
+  static const String reviewvideos = '/ReviewVideos';
+    static const String editmenu = '/EditMenu';
+
   
 }
