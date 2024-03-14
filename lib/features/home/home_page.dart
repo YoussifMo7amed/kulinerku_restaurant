@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kulinerku_restaurant/features/profile/ui/profile_page.dart';
+import '../supliers/ui/supliers_page.dart';
 import 'widgets/custom_buttom_navigationBar.dart';
 import 'widgets/custom_home_appbar.dart';
 import 'screens/home_screen.dart';
@@ -15,16 +16,15 @@ class _HomeScreenState extends State<HomeScreen> {
   int currentindex = 0;
   final List<Widget> screens= const[
   HomePage(),
-  SizedBox(),
+  SupliersPage(),
   ProfilePage(),
 ];
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
-      Scaffold(
-        appBar: customHomeAppBar(),
-        body: screens[currentindex],
-      ),
+      
+        screens[currentindex],
+   
       Align(
           alignment: Alignment.bottomCenter,
           child: CustomButtomNavigationBar(

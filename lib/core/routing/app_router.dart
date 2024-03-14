@@ -3,6 +3,8 @@ import 'package:kulinerku_restaurant/features/home/screens/review_screen.dart';
 import 'package:kulinerku_restaurant/features/home/home_page.dart';
 import 'package:kulinerku_restaurant/features/profile/ui/screens/edut_menu_screen.dart';
 import 'package:kulinerku_restaurant/features/profile/ui/screens/videos_review_screen.dart';
+import 'package:kulinerku_restaurant/features/supliers/ui/screens/suplier_screen.dart';
+import 'package:kulinerku_restaurant/features/supliers/ui/supliers_page.dart';
 
 import '../../features/home/screens/video_screen.dart';
 import '../../features/onboarding/ui/onboarding.dart';
@@ -43,6 +45,14 @@ class AppRouter {
          case Routes.editmenu:
         return MaterialPageRoute(
           builder: (_) => const EdtiMenu(),
+        );
+         case Routes.supliers:
+        return MaterialPageRoute(
+          builder: (_) => const SupliersPage(),
+        );
+         case Routes.supliersScreen:
+        return MaterialPageRoute(
+          builder: (_) => const SuplierScreen(),
         );
       default:
         return MaterialPageRoute(
