@@ -46,14 +46,14 @@ class AppTextButton extends StatelessWidget {
           ),
         ),
         fixedSize: MaterialStateProperty.all(
-          Size(buttonWidth?.w ?? double.maxFinite, buttonHeight ?? 50.h),
+          Size(buttonWidth ?? double.maxFinite, buttonHeight ?? 50.h),
         ),
       ),
       onPressed: onPressed,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          buttonIcon??SizedBox(
+          buttonIcon??const SizedBox(
             height: 0,
             width: 0,
           ),
